@@ -3,7 +3,8 @@
         "start": "cross-env NODE_ENV=development nollup -c --hot --content-base public --port 9009",
         "dist": "tsc && cross-env NODE_ENV=production rollup -c",
         "distWatch": "tsc && cross-env NODE_ENV=production rollup -c --watch",
-        "distWatchNoChecks": "cross-env NODE_ENV=production rollup -c --watch"
+        "distWatchNoChecks": "cross-env NODE_ENV=production rollup -c --watch",
+        "inspectStart": "cross-env NODE_ENV=development && node --inspect-brk node_modules/nollup/lib/cli.js -c --hot --content-base public --port 9009"
     },
     "dependencies": {
         "preact": "10.0.0-rc.0",
