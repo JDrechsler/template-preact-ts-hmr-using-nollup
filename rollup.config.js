@@ -19,6 +19,7 @@ let config = {
         jscc({
             values: {
                 _DEBUG: (process.env.NODE_ENV !== 'production'),
+                _PROD: (process.env.NODE_ENV === 'production'),
             }
         }),
         node_resolve(),
@@ -27,7 +28,8 @@ let config = {
         }),
         process.env.NODE_ENV === 'production' && static_files({
             include: ['./public']
-        })
+        }),
+
     ],
     manualChunks(id) {
         if (id.includes('node_modules')) {

@@ -6,20 +6,20 @@
         "distWatchNoChecks": "cross-env NODE_ENV=production rollup -c --watch"
     },
     "dependencies": {
-        "cross-env": "^6.0.3",
         "preact": "10.0.0-rc.0",
         "preact-router": "^3.1.0",
-        "rollup-plugin-terser": "^5.1.2",
-        "tslib": "1.10.0",
         "z-preact-easy-state": "^6.0.12"
     },
     "devDependencies": {
+        "cross-env": "^6.0.3",
         "nollup": "latest",
         "rollup": "latest",
         "rollup-plugin-jscc": "latest",
         "rollup-plugin-node-resolve": "latest",
         "rollup-plugin-static-files": "latest",
+        "rollup-plugin-terser": "^5.1.2",
         "rollup-plugin-typescript": "1.0.1",
+        "tslib": "1.10.0",
         "typescript": "3.7.3"
     }
 }

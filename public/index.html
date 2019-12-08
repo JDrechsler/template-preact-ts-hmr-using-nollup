@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HMR Test</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32_reducedColors.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16_reducedColors.png">
+
+    <!-- Module Preloads -->
+    <link rel="modulepreload" href="preactBundle.js" />
+    <link rel="modulepreload" href="main.js" />
 
     <style>
         body {
@@ -57,11 +66,12 @@
             border-radius: 3px;
         }
     </style>
+
 </head>
 
 <body>
     <div id="app"></div>
-    <script type="module" async src="/main.js"></script>
+    <script type="module" async="" src="/main.js"></script>
 </body>
 
 </html>
