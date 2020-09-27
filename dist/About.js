@@ -1,0 +1,1 @@
+import{y as t,p as e,c as l,m as n}from"./preactBundle.js";import{v as o}from"./stateManagement.js";const r=t(()=>import("./AboutComp.js"));var a=o(class extends e{render(){return l("section",null,l("h2",null,"About"),l(n,{fallback:l("div",null,"Loading...")},l(r,null)))}});export default a;
