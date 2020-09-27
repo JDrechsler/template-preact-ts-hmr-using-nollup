@@ -30,11 +30,11 @@ class App extends Component {
                     <Router>
                         <Route path="/" component={HomePage} />
                         //#if _DEBUG
-                        <Route path="/lazy" component={Lazy} />
-                        <Route path="/about" component={About} />
+                        <Route path="lazy" component={Lazy} />
+                        <Route path="about" component={About} />
                         //#else
-                        <Route path="/lazy" component={LazyPage} />
-                        <Route path="/about" component={AboutPage} />
+                        <Route path="lazy" component={LazyPage} />
+                        <Route path="about" component={AboutPage} />
                         //#endif
                         <Route default component={NotFound} />
                     </Router>
