@@ -8,7 +8,7 @@ import { terser } from "rollup-plugin-terser";
 let config = {
     input: './src/main.tsx',
     output: {
-        dir: 'dist',
+        dir: 'docs',
         format: 'esm',
         entryFileNames: '[name].js',
         assetFileNames: '[name].[extname]',
